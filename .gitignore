@@ -1,0 +1,48 @@
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+ENV/
+env/
+.venv/
+
+# Jupyter / VSCode
+.ipynb_checkpoints/
+.vscode/
+
+# --- Environment variables / secrets ---
+.env
+*.env
+
+# --- Cache files ---
+cache/
+.cache/
+*.cache
+
+# --- Data Lake: ignore actual data ---
+data_lake/bronze/*
+data_lake/silver/current/*
+data_lake/silver/hourly/*
+data_lake/silver/daily/*
+
+# Allow empty folder structure
+!data_lake/bronze/.gitkeep
+!data_lake/silver/current/.gitkeep
+!data_lake/silver/hourly/.gitkeep
+!data_lake/silver/daily/.gitkeep
+
+# --- Logs ---
+*.log
+
+# --- Parquet and large output files ---
+*.parquet
+*.csv
+*.tmp
+
+# --- OS specific ---
+.DS_Store
+Thumbs.db
