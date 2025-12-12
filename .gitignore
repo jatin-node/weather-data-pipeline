@@ -28,12 +28,18 @@ data_lake/bronze/*
 data_lake/silver/current/*
 data_lake/silver/hourly/*
 data_lake/silver/daily/*
+data_lake/gold/alerts/*
+data_lake/gold/daily_summary/*
+data_lake/gold/features/*
 
-# Allow empty folder structure
+# Allow empty folder structure (keep only .gitkeep files)
 !data_lake/bronze/.gitkeep
 !data_lake/silver/current/.gitkeep
 !data_lake/silver/hourly/.gitkeep
 !data_lake/silver/daily/.gitkeep
+!data_lake/gold/alerts/.gitkeep
+!data_lake/gold/daily_summary/.gitkeep
+!data_lake/gold/features/.gitkeep
 
 # --- Logs ---
 *.log

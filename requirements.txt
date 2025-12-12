@@ -1,0 +1,8 @@
+pandas
+numpy
+openmeteo-requests
+requests-cache
+retry-requests
+pyarrow          # required for parquet
+fastparquet      # optional secondary engine
+python-dotenv
