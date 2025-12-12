@@ -52,3 +52,7 @@ data_lake/gold/features/*
 # --- OS specific ---
 .DS_Store
 Thumbs.db
+
+# Local-only folders (keep local, not in git)
+airflow/
+src/
